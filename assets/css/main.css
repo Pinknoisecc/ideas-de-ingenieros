@@ -1114,7 +1114,7 @@ section,
   border-radius: 50px;
   border: 2px solid var(--accent-color);
 
-  color: var(--accent-color);
+  color: black;
   background: transparent;
 
   font-weight: 600;
@@ -3235,38 +3235,3 @@ section,
   /* Add your styles here */
 }
 
-/* Botón WhatsApp principal */
-.btn-whatsapp {
-  background-color: #51bae3;
-  color: #ffffff !important;
-  border: none;
-  font-weight: 600;
-  transition: background-color 0.25s ease, transform 0.2s ease;
-  
-}
-
-
-
-/* Ícono WhatsApp SIEMPRE blanco */
-.btn-whatsapp i {
-  color: #ffffff !important;
-  font-size: 1.4rem;
-}
-
-/* Hover visible y con contraste real */
-.btn-whatsapp:hover,
-.btn-whatsapp:focus {
-  background-color: #2fa3d3; /* más oscuro, mismo tono */
-  color: #ffffff !important;
-  transform: translateY(-1px);
-}
-
-/* Evitar que Bootstrap baje la opacidad */
-.btn-whatsapp:hover i {
-  color: #ffffff !important;
-}
-
-/* Tamaño de isotipo de Whatsapp */
-.navmenu a i, .navmenu a:focus i {
-  font-size: 25px;
-}
