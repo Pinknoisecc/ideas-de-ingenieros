@@ -57,56 +57,48 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
   <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-    <!-- Logo -->
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <img src="assets/img/logo.webp" alt="IDEAS De Ingenieros - Ingeniería eléctrica y automatización industrial en la V Región" class="img-fluid">
-      <!-- Si prefieres texto en vez de imagen, usa esto -->
-      <!-- <h1 class="sitename">IDEAS De Ingenieros</h1> -->
+    <a href="#hero" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.webp" alt="IDEAS de Ingenieros">
     </a>
 
-    <!-- Navigation -->
     <nav id="navmenu" class="navmenu">
+
+      <!-- Bloque superior solo móvil -->
+      <div class="mobile-nav-brand">
+        <a href="#hero" class="mobile-brand-link">
+          <img src="assets/img/logo.webp" alt="IDEAS de Ingenieros">
+          <div class="mobile-brand-text">
+            <p class="mobile-brand-slogan">Ingeniería eléctrica y automatización industrial</p>
+          </div>
+        </a>
+      </div>
+
       <ul>
-
-        <li>
-          <a href="#hero" class="active">
-            Inicio
-          </a>
-        </li>
-
-        <li>
-          <a href="#services">
-            Servicios
-          </a>
-        </li>
-
-        <li>
-          <a href="#projects">
-            Proyectos
-          </a>
-        </li>
-
-        <li>
-          <a href="#how-we-work">
-            Cómo trabajamos
-          </a>
-        </li>
-
-        <li>
-          <a href="#contact">
-            Contacto
-          </a>
-        </li>
-
+        <li><a href="#hero" class="active">Inicio</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#how-we-work">Cómo trabajamos</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
+
+      <!-- Bloque inferior solo móvil -->
+      <div class="mobile-nav-contact">
+        <a href="mailto:contacto@ideasingenieros.cl">
+          <i class="bi bi-envelope-fill"></i>
+          <span>contacto@ideasingenieros.cl</span>
+        </a>
+
+        <a href="tel:+56912345678">
+          <i class="bi bi-telephone-fill"></i>
+          <span>+56 9 1234 5678</span>
+        </a>
+      </div>
 
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <!-- CTA principal -->
-    <a class="btn-getstarted" href="#contact">
-      Solicitar evaluación
-    </a>
+    <a class="btn-getstarted" href="#contact">Solicitar evaluación</a>
 
   </div>
 </header>
@@ -123,36 +115,35 @@
 
           <div class="hero-tag">
             <i class="bi bi-lightning-charge-fill"></i>
-            <span>Ingeniería eléctrica y automatización industrial</span>
+            <span>Ingeniería eléctrica y automatización</span>
           </div>
 
           <h1>
-            Ingeniería eléctrica y <span class="highlight">automatización</span> para empresas
+            Ingeniería eléctrica <br>
+            y <span class="highlight">automatización</span> <br>
+            para empresas
           </h1>
 
           <p class="lead">
-            Diseñamos y ejecutamos proyectos eléctricos, sistemas de control y automatización para empresas que necesitan 
-            optimizar sus procesos, mejorar la eficiencia energética y operar con mayor seguridad. 
+            Diseñamos y ejecutamos proyectos eléctricos, tableros de control, instalaciones industriales y sistemas de automatización para empresas que necesitan optimizar sus procesos, mejorar la eficiencia energética y operar con mayor seguridad.
           </p>
 
           <ul class="hero-features">
             <li>
-              <i class="bi bi-check-circle"></i>
-              9 años de experiencia en proyectos eléctricos y automatización
+              <i class="bi bi-check-circle-fill"></i>
+              <span>9 años de experiencia en proyectos eléctricos y automatización</span>
             </li>
             <li>
-              <i class="bi bi-check-circle"></i>
-              Equipo técnico compuesto por ingenieros en automatización
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Equipo técnico compuesto por ingenieros y profesionales especializados</span>
             </li>
           </ul>
 
-          <div class="hero-cta d-flex flex-wrap align-items-center gap-3">
-            <a href="#contact" class="btn btn-primary">
-              Solicitar evaluación
-            </a>
-
-            <a href="https://wa.me/56900000000" class="btn btn-whatsapp">
-              <i class="bi bi-whatsapp"></i> WhatsApp
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Solicitar evaluación</a>
+            <a href="https://wa.me/56900000000" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-whatsapp"></i>
+              WhatsApp
             </a>
           </div>
 
@@ -162,17 +153,24 @@
       <div class="col-lg-6">
         <div class="hero-image-wrapper" data-aos="fade-up" data-aos-delay="300">
 
-          <img
-            src="assets/img/hero/proyecto-ingenieria-industrial.webp"
-            alt="Técnico trabajando en tablero eléctrico industrial de IDEAS De Ingenieros"
-            class="img-fluid hero-image"
-          >
+          <div class="hero-visual-accent accent-one"></div>
+          <div class="hero-visual-accent accent-two"></div>
+
+          <div class="hero-image-frame">
+            <img
+              src="assets/img/hero/proyecto-ingenieria-industrial.webp"
+              alt="Especialista trabajando en tablero eléctrico industrial"
+              class="img-fluid hero-image"
+              loading="eager"
+              fetchpriority="high">
+          </div>
 
           <div class="stat-card bottom-right">
+            <span class="stat-chip">Trayectoria comprobada</span>
             <div class="stat-value">9 años</div>
             <div class="stat-label">de experiencia en ingeniería y automatización</div>
             <div class="stat-icon">
-              <i class="bi bi-award"></i>
+              <i class="bi bi-award-fill"></i>
             </div>
           </div>
 
@@ -184,23 +182,141 @@
 </section>
 <!-- /Hero Section -->
 
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="clients-slider">
+          <div class="clients-track track-1" data-aos="fade-right" data-aos-delay="200">
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="Client 1">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="Client 2">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="Client 3">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="Client 4">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="Client 5">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="Client 6">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="Client 7">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="Client 8">
+            </div>
+
+            <!-- Duplicate for seamless looping -->
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="Client 1">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="Client 2">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="Client 3">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="Client 4">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="Client 5">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="Client 6">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="Client 7">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="Client 8">
+            </div>
+          </div>
+        </div>
+
+        <div class="clients-slider">
+          <div class="clients-track track-2" data-aos="fade-left" data-aos-delay="300">
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="Client 8">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="Client 7">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="Client 6">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="Client 5">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="Client 4">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="Client 3">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="Client 2">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="Client 1">
+            </div>
+
+            <!-- Duplicate for seamless looping -->
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="Client 8">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="Client 7">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="Client 6">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="Client 5">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="Client 4">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="Client 3">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="Client 2">
+            </div>
+            <div class="clients-slide">
+              <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="Client 1">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
 <!-- Services Section -->
 <section id="services" class="services section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Servicios principales</h2>
-    <p>
-      Soluciones de ingeniería eléctrica y automatización para empresas que requieren eficiencia,
-      control y desarrollo técnico confiable.
-    </p>
-  </div><!-- End Section Title -->
+    <p>Soluciones de ingeniería eléctrica y automatización para empresas que requieren eficiencia, control y desarrollo técnico confiable.</p>
+  </div>
+  <!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="services-row">
-      <div class="row align-items-center">
-        
+      <div class="row gy-5 align-items-start">
+
+        <!-- Columna izquierda -->
         <div class="col-lg-4">
           <div class="services-headline" data-aos="fade-up">
             <p class="services-subtitle">Soluciones técnicas</p>
@@ -209,19 +325,18 @@
 
           <div class="services-description" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Diseñamos, implementamos y desarrollamos soluciones eléctricas y de automatización
-              para empresas, infraestructura técnica e instalaciones que requieren seguridad,
-              control y eficiencia operativa.
+              Diseñamos, implementamos y desarrollamos soluciones eléctricas y de automatización para empresas, infraestructura técnica e instalaciones que requieren seguridad, control y eficiencia operativa.
             </p>
           </div>
 
           <div class="services-image-container" data-aos="fade-up" data-aos-delay="200">
             <div class="services-image">
-              <img src="assets/img/services/servicios-ideas-ingenieros.webp" alt="Técnico de IDEAS De Ingenieros trabajando en sistema eléctrico industrial" class="img-fluid">
+              <img src="assets/img/services/Ingenieria-electrica-y-automatización-industria.webp" alt="Tablero eléctrico industrial con componentes de automatización" class="img-fluid">
             </div>
           </div>
         </div>
 
+        <!-- Columna derecha -->
         <div class="col-lg-8">
           <div class="services-grid">
             <div class="row gy-4">
@@ -236,8 +351,7 @@
                     <div class="service-info">
                       <h3><a href="#contact">Ingeniería eléctrica</a></h3>
                       <p>
-                        Desarrollo de proyectos eléctricos para instalaciones, empresas e infraestructura
-                        que requieren soluciones técnicas confiables y bien ejecutadas.
+                        Desarrollo de proyectos eléctricos para instalaciones, empresas e infraestructura que requieren soluciones técnicas confiables y bien ejecutadas.
                       </p>
                       <div class="service-action">
                         <a href="#contact" class="read-more-btn">Consultar servicio <i class="bi bi-arrow-right"></i></a>
@@ -257,8 +371,7 @@
                     <div class="service-info">
                       <h3><a href="#contact">Automatización y control</a></h3>
                       <p>
-                        Implementación de sistemas de automatización, control y monitoreo para optimizar
-                        procesos y mejorar el desempeño operativo de cada instalación.
+                        Implementación de sistemas de automatización, control y monitoreo para optimizar procesos y mejorar el desempeño operativo de cada instalación.
                       </p>
                       <div class="service-action">
                         <a href="#contact" class="read-more-btn">Consultar servicio <i class="bi bi-arrow-right"></i></a>
@@ -278,8 +391,7 @@
                     <div class="service-info">
                       <h3><a href="#contact">Tableros eléctricos</a></h3>
                       <p>
-                        Construcción, integración y montaje de tableros eléctricos y de control adaptados
-                        a los requerimientos técnicos de cada proyecto.
+                        Construcción, integración y montaje de tableros eléctricos y de control adaptados a los requerimientos técnicos de cada proyecto.
                       </p>
                       <div class="service-action">
                         <a href="#contact" class="read-more-btn">Consultar servicio <i class="bi bi-arrow-right"></i></a>
@@ -299,8 +411,7 @@
                     <div class="service-info">
                       <h3><a href="#contact">Instalaciones y montaje</a></h3>
                       <p>
-                        Ejecución de instalaciones eléctricas, integración de equipos y puesta en marcha
-                        de sistemas para distintos entornos técnicos y operativos.
+                        Ejecución de instalaciones eléctricas, integración de equipos y puesta en marcha de sistemas para distintos entornos técnicos y operativos.
                       </p>
                       <div class="service-action">
                         <a href="#contact" class="read-more-btn">Consultar servicio <i class="bi bi-arrow-right"></i></a>
@@ -313,31 +424,27 @@
             </div>
           </div>
         </div>
+        <!-- Fin columna derecha -->
 
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /Services Section -->
-
-<!-- Stats Section -->
+        <!-- Stats Section -->
 <section id="stats" class="stats section light-background">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="row gy-4 align-items-center">
 
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-5 col-md-12">
         <div class="stats-overview text-center text-lg-start" data-aos="fade-right" data-aos-delay="200">
           <h3>Respaldo técnico en números</h3>
           <p>
-            A lo largo de los años, IDEAS De Ingenieros ha participado en proyectos eléctricos, soluciones de automatización, integración de tableros y trabajos técnicos desarrollados para distintos requerimientos operativos.
+            A lo largo de los años, IDEAS de Ingenieros ha participado en proyectos eléctricos,
+            soluciones de automatización, integración de tableros y trabajos técnicos
+            desarrollados para distintos requerimientos operativos.
           </p>
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-7 col-md-12">
         <div class="stats-grid" data-aos="zoom-in" data-aos-delay="300">
 
           <div class="stats-card">
@@ -395,7 +502,16 @@
 
   </div>
 
-</section><!-- /Stats Section -->
+</section>
+<!-- /Stats Section -->
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- /Services Section -->
 
 <!-- Projects Section -->
 <section id="projects" class="projects section">
@@ -415,7 +531,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/img/projects/clinica-los-carrera.webp" alt="Proyecto eléctrico en Clínica Los Carrera, Quilpué" class="img-fluid">
+            <img src="assets/img/projects/sistema-de-alimentacion-ups-clinica-los-carrera.webp" alt="Proyecto eléctrico en Clínica Los Carrera, Quilpué" class="img-fluid">
           </div>
 
           <div class="project-content">
@@ -440,7 +556,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/img/projects/clinica-los-leones.webp" alt="Proyecto eléctrico en Clínica Los Leones, La Calera" class="img-fluid">
+            <img src="assets/img/projects/proyecto-electrico-clinica-los-leones-la-calera.webp" alt="Proyecto eléctrico en Clínica Los Leones, La Calera" class="img-fluid">
           </div>
 
           <div class="project-content">
@@ -465,7 +581,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/img/projects/essal-osorno.webp" alt="Proyecto de tratamiento de aguas en ESSAL Osorno" class="img-fluid">
+            <img src="assets/img/projects/proyecto-tratamiento-aguas-essal-osorno.webp" alt="Proyecto de tratamiento de aguas en ESSAL Osorno" class="img-fluid">
           </div>
 
           <div class="project-content">
@@ -490,7 +606,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/img/projects/esval-mirasol.webp" alt="Proyecto eléctrico y de control en ESVAL Mirasol" class="img-fluid">
+            <img src="assets/img/projects/proyecto-control-cloracion-esval-mirasol.webp" alt="Proyecto eléctrico y de control en ESVAL Mirasol" class="img-fluid">
           </div>
 
           <div class="project-content">
@@ -515,7 +631,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/img/projects/mach-concon.webp" alt="Sistema de control de bombeo de agua potable para MACH en Concón" class="img-fluid">
+            <img src="assets/img/projects/control-bombeo-agua-potable-mach-concon.webp" alt="Sistema de control de bombeo de agua potable para MACH en Concón" class="img-fluid">
           </div>
 
           <div class="project-content">
@@ -540,7 +656,7 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/img/projects/altos-san-pedro.webp" alt="Infraestructura eléctrica para proyecto Altos de San Pedro en San Pedro de Limache" class="img-fluid">
+            <img src="assets/img/projects/infraestructura-electrica-altos-de-san-pedro-limache.webp" alt="Infraestructura eléctrica para proyecto Altos de San Pedro en San Pedro de Limache" class="img-fluid">
           </div>
 
           <div class="project-content">
@@ -573,15 +689,17 @@
   <div class="container section-title" data-aos="fade-up">
     <h2>Cómo trabajamos</h2>
     <p>
-      Un proceso claro para evaluar, diseñar e implementar soluciones eléctricas y de automatización
-      de forma ordenada, técnica y profesional.
+      Desarrollamos cada proyecto con una metodología clara, técnica y orientada a resultados,
+      desde el diagnóstico inicial hasta la implementación final en terreno.
     </p>
-  </div><!-- End Section Title -->
+  </div>
+  <!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="steps-wrapper">
 
+      <!-- Step 1 -->
       <div class="step-item" data-aos="fade-right" data-aos-delay="200">
         <div class="step-content">
           <div class="step-icon">
@@ -589,31 +707,37 @@
           </div>
           <div class="step-info">
             <span class="step-number">Paso 01</span>
-            <h3>Evaluación del requerimiento</h3>
+            <h3>Levantamiento técnico</h3>
             <p>
-              Analizamos las necesidades del proyecto, las condiciones de la instalación y los
-              requerimientos técnicos para definir el alcance inicial de la solución.
+              Analizamos las condiciones del proyecto, requerimientos operativos,
+              infraestructura existente y necesidades específicas del cliente para
+              definir una base técnica sólida antes de ejecutar.
             </p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>
+      <!-- End Step 1 -->
 
+      <!-- Step 2 -->
       <div class="step-item" data-aos="fade-left" data-aos-delay="300">
         <div class="step-content">
           <div class="step-icon">
-            <i class="bi bi-diagram-3"></i>
+            <i class="bi bi-clipboard-data"></i>
           </div>
           <div class="step-info">
             <span class="step-number">Paso 02</span>
-            <h3>Diseño y propuesta técnica</h3>
+            <h3>Evaluación y propuesta</h3>
             <p>
-              Estructuramos una solución acorde al proyecto, definiendo sistemas eléctricos,
-              control, automatización, integración de equipos y criterios de implementación.
+              Diseñamos la solución más adecuada según el alcance del proyecto,
+              contemplando aspectos eléctricos, automatización, control, seguridad
+              y eficiencia para asegurar una implementación bien planificada.
             </p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>
+      <!-- End Step 2 -->
 
+      <!-- Step 3 -->
       <div class="step-item" data-aos="fade-right" data-aos-delay="400">
         <div class="step-content">
           <div class="step-icon">
@@ -621,15 +745,18 @@
           </div>
           <div class="step-info">
             <span class="step-number">Paso 03</span>
-            <h3>Implementación y montaje</h3>
+            <h3>Ejecución e integración</h3>
             <p>
-              Ejecutamos la instalación, integración y desarrollo del sistema con enfoque en
-              seguridad, funcionalidad, continuidad operacional y correcta ejecución en terreno.
+              Desarrollamos la instalación, montaje, integración de tableros, equipos
+              y sistemas de control con un enfoque técnico riguroso, cuidando la calidad
+              de cada etapa del proceso.
             </p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>
+      <!-- End Step 3 -->
 
+      <!-- Step 4 -->
       <div class="step-item" data-aos="fade-left" data-aos-delay="500">
         <div class="step-content">
           <div class="step-icon">
@@ -637,20 +764,23 @@
           </div>
           <div class="step-info">
             <span class="step-number">Paso 04</span>
-            <h3>Puesta en marcha y verificación</h3>
+            <h3>Pruebas y puesta en marcha</h3>
             <p>
-              Realizamos pruebas, ajustes y validaciones para asegurar que la solución quede
-              operativa, segura y alineada con los requerimientos del proyecto.
+              Verificamos el funcionamiento del sistema, realizamos pruebas técnicas,
+              ajustes operativos y dejamos la solución lista para su uso, garantizando
+              un resultado estable y confiable en terreno.
             </p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>
+      <!-- End Step 4 -->
 
     </div>
 
   </div>
 
-</section><!-- /How We Work Section -->
+</section>
+<!-- /How We Work Section -->
 
     <!-- Faq Section -->
 <section id="faq" class="faq section">
@@ -769,7 +899,8 @@
 
 </section><!-- /Faq Section -->
 
-<!-- Call To Action Section -->
+
+    <!-- Call To Action Section -->
 <section id="call-to-action" class="call-to-action section light-background">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -799,7 +930,7 @@
       </div>
 
       <div class="cta-image" data-aos="fade-left" data-aos-delay="300">
-        <img src="assets/img/illustration/proyecto-electrico.webp" alt="Proyecto eléctrico y automatización industrial" class="img-fluid">
+        <img src="assets/img/desarrollo-sistema-electrico-industrial-automatizacion-ideas-de-ingeniero.webp" alt="Proyecto eléctrico y automatización industrial" class="img-fluid">
       </div>
 
     </div>
@@ -808,7 +939,7 @@
 
 </section>
 
-<!-- Contact Section -->
+    <!-- Contact Section -->
 <section id="contact" class="contact section">
 
   <!-- Section Title -->
@@ -930,10 +1061,8 @@
     <div class="row gy-4">
 
       <div class="col-lg-4 col-md-6 footer-about">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Si usarás logo en imagen, reemplaza el span -->
-          <!-- <img src="assets/img/logo.webp" alt="IDEAS De Ingenieros"> -->
-          <span class="sitename">IDEAS De Ingenieros</span>
+        <a href="#hero" class="footer-brand d-flex align-items-center">
+          <img src="assets/img/logo-footer.webp" alt="IDEAS de Ingenieros" class="footer-brand-logo">
         </a>
 
         <p class="footer-description">
@@ -944,13 +1073,12 @@
         <div class="footer-contact pt-3">
           <p>V Región, Chile</p>
           <p class="mt-3"><strong>Teléfono:</strong> <span>+56 9 1234 5678</span></p>
-          <p><strong>Email:</strong> <span>info@ideasdeingenieros.cl</span></p>
+          <p><strong>Email:</strong> <span>contacto@ideasingenieros.cl</span></p>
         </div>
 
-        <div class="social-links d-flex mt-4">
-          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <div class="footer-certification mt-4">
+          <span class="certification-title">Certificación SEC</span>
+          <img src="assets/img/Logo-SEC.webp" alt="Logo certificación SEC" class="footer-sec-logo">
         </div>
       </div>
 
@@ -958,9 +1086,11 @@
         <h4>Navegación</h4>
         <ul>
           <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#how-we-work">Cómo trabajamos</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
@@ -976,12 +1106,12 @@
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Proyectos y soporte</h4>
+        <h4>Más información</h4>
         <ul>
           <li><a href="#projects">Proyectos ejecutados</a></li>
           <li><a href="#stats">Respaldo técnico</a></li>
           <li><a href="#faq">Preguntas frecuentes</a></li>
-          <li><a href="#call-to-action">Solicitar evaluación</a></li>
+          <li><a href="#contact">Solicitar evaluación</a></li>
         </ul>
       </div>
 
@@ -990,14 +1120,13 @@
 
   <div class="container copyright text-center mt-4">
     <p>
-      © <span>2026</span> <strong class="px-1 sitename">IDEAS De Ingenieros</strong>
+      © <span>2026</span>
+      <strong class="px-1 sitename">IDEAS de Ingenieros</strong>
       <span>Todos los derechos reservados</span>
     </p>
   </div>
 
 </footer>
-
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
