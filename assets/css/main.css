@@ -2418,13 +2418,26 @@ section,
   .services .service-content-featured {
     flex-direction: column;
     gap: 14px;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .services .service-content-featured .service-icon {
     width: 62px;
     height: 62px;
     font-size: 1.8rem;
+    margin: 0 auto 4px;
+  }
+
+  .services .service-content-featured .service-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services .service-content-featured .service-label {
+    display: block;
+    text-align: center;
   }
 
   .services .service-content-featured .service-info h3 {
@@ -2433,12 +2446,18 @@ section,
 
   .services .service-content-featured .service-info p {
     font-size: 0.97rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .services .service-content-featured .service-action {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
 }
+
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
