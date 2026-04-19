@@ -173,7 +173,7 @@ h6 {
   }
 
   .header .logo img {
-    max-height: 90px;
+    max-height: 152px;
   }
 }
 
@@ -184,7 +184,7 @@ h6 {
   }
 
   .header .logo img {
-    max-height: 50px;
+    max-height: 100px;
   }
 }
 
@@ -838,7 +838,7 @@ h6 {
 /* Escritorio */
 @media (max-width: 1920px) {
   .footer .footer-brand-logo {
-    max-height: 110px;
+    max-height: 170px;
   }
 
   .footer .footer-sec-logo {
@@ -927,7 +927,7 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 95px;
 }
 
 /*--------------------------------------------------------------
@@ -2179,6 +2179,18 @@ section,
   box-shadow: 0 18px 35px rgba(18, 32, 51, 0.08);
 }
 
+/* Featured card */
+.services .service-card-featured {
+  background: linear-gradient(135deg, #ffffff 0%, #f4f9fc 100%);
+  border: 1px solid rgba(122, 201, 67, 0.18);
+  box-shadow: 0 18px 38px rgba(18, 32, 51, 0.06);
+  padding: 34px 34px 30px;
+}
+
+.services .service-card-featured:hover {
+  box-shadow: 0 22px 42px rgba(18, 32, 51, 0.09);
+}
+
 .services .service-content .service-icon {
   width: 70px;
   height: 70px;
@@ -2244,6 +2256,57 @@ section,
   font-size: 0.95rem;
 }
 
+/* Featured content layout */
+.services .service-content-featured {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  text-align: left;
+}
+
+.services .service-content-featured .service-icon {
+  flex: 0 0 74px;
+  width: 74px;
+  height: 74px;
+  margin: 0;
+  font-size: 2.1rem;
+  border-radius: 20px;
+  background-color: rgba(122, 201, 67, 0.08);
+  border: 1px solid rgba(122, 201, 67, 0.16);
+}
+
+.services .service-content-featured .service-info {
+  flex: 1;
+}
+
+.services .service-content-featured .service-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary-accent-color);
+  font-family: var(--nav-font);
+}
+
+.services .service-content-featured .service-info h3 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.services .service-content-featured .service-info p {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1.02rem;
+}
+
+.services .service-content-featured .service-action {
+  margin-top: 24px;
+}
+
 /* Tablet */
 @media (max-width: 991px) {
   .services {
@@ -2272,6 +2335,18 @@ section,
 
   .services .services-image-container .services-image {
     height: 320px;
+  }
+
+  .services .service-card-featured {
+    padding: 30px 28px 26px;
+  }
+
+  .services .service-content-featured {
+    gap: 18px;
+  }
+
+  .services .service-content-featured .service-info h3 {
+    font-size: 1.8rem;
   }
 }
 
@@ -2335,8 +2410,35 @@ section,
     font-size: 0.88rem;
     padding: 11px 18px;
   }
-}
 
+  .services .service-card-featured {
+    padding: 26px 22px 24px;
+  }
+
+  .services .service-content-featured {
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .services .service-content-featured .service-icon {
+    width: 62px;
+    height: 62px;
+    font-size: 1.8rem;
+  }
+
+  .services .service-content-featured .service-info h3 {
+    font-size: 1.55rem;
+  }
+
+  .services .service-content-featured .service-info p {
+    font-size: 0.97rem;
+  }
+
+  .services .service-content-featured .service-action {
+    margin-top: 20px;
+  }
+}
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
@@ -3408,7 +3510,7 @@ section,
 .contact .contact-form-container .php-email-form .form-submit {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 10px;
@@ -3866,6 +3968,110 @@ section,
 @media (max-width: 767px) {
   .service-details .service-content .service-features .feature-card {
     margin-bottom: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# WhatsApp Floating Button
+--------------------------------------------------------------*/
+.whatsapp-float {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 62px;
+  min-width: 62px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background-color: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.28);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  animation: whatsappBreath 2.8s ease-in-out infinite;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.whatsapp-float,
+.whatsapp-float:hover,
+.whatsapp-float:focus,
+.whatsapp-float:active,
+.whatsapp-float:visited {
+  background-color: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(37, 211, 102, 0.34);
+}
+
+.whatsapp-float__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  line-height: 1;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.whatsapp-float__text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: var(--nav-font);
+  white-space: nowrap;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-width 0.35s ease, opacity 0.25s ease;
+  color: #ffffff;
+}
+
+.whatsapp-float:hover .whatsapp-float__text {
+  max-width: 140px;
+  opacity: 1;
+}
+
+@keyframes whatsappBreath {
+  0%, 100% {
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.26);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 16px 34px rgba(37, 211, 102, 0.34);
+    transform: scale(1.04);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .whatsapp-float {
+    right: 10px;
+    bottom: 25px;
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .whatsapp-float__icon {
+    font-size: 1.75rem;
+  }
+
+  .whatsapp-float__text {
+    display: none;
+  }
+
+  .whatsapp-float:hover {
+    transform: translateY(-3px);
   }
 }
 
